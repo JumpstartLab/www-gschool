@@ -62,7 +62,6 @@ p {margin: 0 0 12px;}
 .intro strong {font-weight: normal;}
 .intro img {margin: 0 80px 59px;}
 .intro .header {float: left; width: 100%;}
-.intro .logo {float: left;}
 .intro .logo img {
   display: block;
   width: 411px;
@@ -264,7 +263,7 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 .timeline .nov {margin-top: -65px;}
 .timeline .june {margin-top: 100px;}
 
-.eleven {margin-bottom: 80px;}
+.eleven {margin-bottom: 60px;}
 .eleven .marker {
   float: left;
   margin-left: 93px;
@@ -293,6 +292,36 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   border-radius: 130px;
   }
 
+.btn {
+  clear: both;
+  float: left;
+  padding: 2px;
+  margin: 40px 0 0 379px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background: #f7901e;
+  display: block;
+  text-align: center;
+  }
+.btn a {
+  float: left;
+  padding: 8px 40px 14px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background: #f7901e;
+  color: #fff;
+	font-family: "ff-tisa-web-pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 20px;
+  }
+.btn a:hover, .btn:hover {background: #f8ac14;}
+
 #footer {
   float: left;
   width: 100%;
@@ -301,5 +330,19 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   color: #99c1c2;
   font-size: 14px;
   }
-#footer p {margin: 0;}
+#footer p {float: left; margin: 0;}
 #footer a {color: #c8e7ef; border-color: #c8e7ef;}
+#footer ul {float: right;}
+#footer li {display: inline; float: left; margin-left: 15px;}
+#footer li a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-indent: -99999px;
+  border: none;
+  opacity: .5;
+  }
+#footer li a:hover {opacity: 1;}
+#footer .twitter a {background: url(/images/icon-twitter.png) no-repeat;}
+#footer .fb a {background: url(/images/icon-facebook.png) no-repeat;}
+#footer .google a {background: url(/images/icon-google.png) no-repeat;}
