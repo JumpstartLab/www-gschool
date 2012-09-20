@@ -1,1 +1,1 @@
-web: ruby galvanize.rb
+web: ruby galvanize.rb -p $PORT
