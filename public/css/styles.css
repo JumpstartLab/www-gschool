@@ -1,7 +1,4 @@
 
-/* UNIVERSAL RESET
-============================================================================ */
-
 /* Reset default styling (http://meyerweb.com/eric/tools/css/reset/)  */
 
 html, body, div, span, applet, object, iframe,
@@ -26,9 +23,7 @@ ol, ul {list-style: none;}
 
 table {border-collapse: collapse; border-spacing: 0;}
 
-
-/* GLOBALS
-============================================================================ */
+/* Styles */
 
 body {
 	margin: 0;
@@ -51,7 +46,7 @@ p {margin: 0 0 12px;}
 .wrap {width: 940px; margin: 0 auto; padding: 0 10px;}
 
 .intro p {
-  padding: 40px 80px 30px;
+  padding: 0 80px 29px;
   color: #257287;
 	font-family: "ff-tisa-web-pro", "Helvetica Neue", Arial, sans-serif;
   font-size: 22px;
@@ -59,19 +54,25 @@ p {margin: 0 0 12px;}
   }
 .intro strong {font-weight: normal;}
 .intro img {margin: 0 80px 59px;}
+.intro .intro-video {
+  width: 780px;
+  margin: 0 80px 40px;
+  background: url(/images/denver-images.jpg) no-repeat;
+  }
+.intro .video {margin: 0 190px;}
 .intro .header {float: left; width: 100%;}
 .intro .logo img {
   float: left;
   width: 340px;
-  margin: 43px auto 60px;
+  margin: 43px auto 40px;
   }
 .intro .nav {
   float: right;
   margin: 50px 0 0;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   }
-.intro .nav li {display: inline; margin-left: 20px;}
+.intro .nav li {display: inline; margin-left: 10px;}
 .intro .nav a {
   padding: 6px 10px;
   background: #b5d8e6;
@@ -92,7 +93,7 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 .section {float: left; width: 100%;}
 .section.left {background: url(/images/marker-line-left.png) center 17px no-repeat;}
 .section.right {background: url(/images/marker-line-right.png) center 17px no-repeat;}
-.section.both {background: url(/images/marker-line.png) center 17px no-repeat;}
+.section.both {background: url(/images/marker-line.png) center 70px no-repeat;}
 .section.five.left {background-position-y: 149px;}
 .section.eleven.left {background-position-y: 185px;}
 
@@ -121,9 +122,9 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 
 .then-what {
   background:
-    url(/images/bg-blue.jpg) top center no-repeat,
     url(/images/bg-blue-left.png) top left repeat-y,
-    url(/images/bg-blue-right.png) top right repeat-y;
+    url(/images/bg-blue-right.png) top right repeat-y,
+    url(/images/bg-blue.jpg) top center no-repeat;
   background-color: #257287;
   color: #c4e1ec;
   }
@@ -141,11 +142,13 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 
 .five .wrap div {
   width: 460px;
-  margin: 67px 0 55px 174px;
+  margin: 67px 0 0 174px;
   padding-left: 66px;
   background: #fff url(/images/marker-five.png) 0 65px no-repeat;
   }
 .five h2 {text-align: center;}
+
+#how .wrap {margin-top: 53px;}
 
 .six {
   float: left;
@@ -193,9 +196,9 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   position: relative;
   margin: 0 0 58px;
   background:
-    url(/images/bg-beige-center.jpg) top center no-repeat,
     url(/images/bg-beige-left.png) top left repeat-y,
     url(/images/bg-beige-right.png) top right repeat-y,
+    url(/images/bg-beige-center.jpg) top center no-repeat,
     url(/images/bg-beige.png) top center repeat-y;
   color: #5f554e;
   }
@@ -359,3 +362,22 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 #footer .twitter a {background: url(/images/icon-twitter.png) no-repeat;}
 #footer .fb a {background: url(/images/icon-facebook.png) no-repeat;}
 #footer .google a {background: url(/images/icon-google.png) no-repeat;}
+
+/* Use media queries to move nav to the side on screens big enough */
+
+@media only screen and (min-width: 1200px) {
+  .intro .nav {
+    position: fixed;
+    top: 5px;
+    right: 60px;
+    text-align: right;
+    font-size: 16px;
+    z-index: 100;
+    }
+  .intro .nav li {display: block; margin-bottom: 20px;}
+  .intro .logo img {
+    float: none;
+    display: block;
+    margin: 43px auto 40px;
+    }
+  }
