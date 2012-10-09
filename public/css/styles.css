@@ -56,19 +56,26 @@ p {margin: 0 0 12px;}
 .intro img {margin: 0 80px 59px;}
 .intro .intro-video {
   width: 780px;
-  margin: 0 80px 40px;
+  margin: 0 80px 38px;
   background: url(/images/denver-images.jpg) no-repeat;
   }
 .intro .video {margin: 0 190px;}
 .intro .header {float: left; width: 100%;}
-.intro .logo img {
+.intro .logo {float: left;}
+.intro .logo img {width: 340px; margin: 43px 0 3px;}
+.intro .tagline {
+  display: inline;
   float: left;
-  width: 340px;
-  margin: 43px auto 40px;
+  clear: left;
+  text-align: left;
+  font-size: 15px;
+  font-weight: normal;
+  color: #a39c87;
+  margin-bottom: 38px;
   }
 .intro .nav {
   float: right;
-  margin: 50px 0 0;
+  margin: -41px 0 0;
   font-weight: 600;
   font-size: 15px;
   }
@@ -370,14 +377,22 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
     position: fixed;
     top: 5px;
     right: 60px;
+    margin-top: 46px;
     text-align: right;
     font-size: 16px;
     z-index: 100;
     }
   .intro .nav li {display: block; margin-bottom: 20px;}
+  .intro .nav li a {display: block; text-align: center;}
+  .intro .logo {float: none;}
   .intro .logo img {
+    display: block;
+    width: 340px;
+    margin: 43px auto 10px;
+    }
+  .intro .tagline {
     float: none;
     display: block;
-    margin: 43px auto 40px;
+    text-align: center;
     }
   }
