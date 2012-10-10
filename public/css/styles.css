@@ -396,3 +396,82 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
     text-align: center;
     }
   }
+
+/* Print styles */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    filter: none !important;
+    -ms-filter: none !important;
+    }
+  body {
+    margin: 0 10%;
+    border: none;
+    font-family: "Times New Roman", serif !important;
+    }
+  html {padding: 3% 0;}
+  p, h2, h3 {orphans: 3; widows: 3;}
+  p, ul {
+    font-size: 12pt;
+    line-height: 15pt;
+    margin: 0 0 10pt !important;
+    padding: 0 !important;
+    }
+  ul {
+    list-style: disc !important;
+    position: relative !important;
+    width: 100%;
+    height: auto !important;
+    padding: 0 !important;
+
+    }
+  li {
+    float: none !important;
+    position: relative;
+    margin: 0 0 6pt 2% !important;
+    padding: 0 !important;
+    text-align: left !important;
+    }
+  h2, h3 {
+    font-size: 16pt;
+    margin: 10pt 0 10pt !important;
+    padding: 0;
+    page-break-after: avoid;
+    font-family: "Helvetica Neue", sans-serif !important;
+    text-align: left !important;
+    }
+  h2 {font-size: 12pt;}
+  h2 span {margin: 0 !important; padding: 0 !important;}
+  div {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-position: 0 0 !important;
+    }
+  img, .nav, iframe, .video, .intro-video, .btn, #footer, #footer p {display: none !important;}
+  .logo img {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+    }
+  .tagline {text-align: center; margin: 0 0 25pt !important;}
+  .intro p {
+    font-family: "Times New Roman", serif;
+    padding: 0 0 15pt !important;
+    font-size: 15pt;
+    line-height: 20pt;
+    }
+  .when-where h2 em {
+    font-size: inherit !important;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: baseline;
+    }
+  .instructor .border {border: none;}
+  }
