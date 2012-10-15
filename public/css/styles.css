@@ -46,7 +46,7 @@ p {margin: 0 0 12px;}
 .wrap {width: 940px; margin: 0 auto; padding: 0 10px;}
 
 .intro p {
-  padding: 0 80px 29px;
+  padding: 0 80px 28px;
   color: #257287;
 	font-family: "ff-tisa-web-pro", "Helvetica Neue", Arial, sans-serif;
   font-size: 22px;
@@ -61,21 +61,31 @@ p {margin: 0 0 12px;}
   }
 .intro .video {margin: 0 190px;}
 .intro .header {float: left; width: 100%;}
-.intro .logo {float: left;}
-.intro .logo img {width: 340px; margin: 43px 0 3px;}
+.intro .logo {float: none;}
+.intro .logo img {
+  display: block;
+  width: 300px;
+  margin: 43px auto 10px;
+  }
 .intro .tagline {
   display: inline;
-  float: left;
+  float: none;
   clear: left;
+  display: block;
   text-align: left;
   font-size: 15px;
   font-weight: normal;
   color: #a39c87;
   margin-bottom: 38px;
+  text-align: center;
   }
 .intro .nav {
-  float: right;
-  margin: -41px 0 0;
+  clear: left;
+  float: none;
+  display: block;
+  width: auto;
+  margin: 0 auto 40px;
+  text-align: center;
   font-weight: 600;
   font-size: 15px;
   }
@@ -101,7 +111,7 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 .section.left {background: url(/images/marker-line-left.png) center 17px no-repeat;}
 .section.right {background: url(/images/marker-line-right.png) center 17px no-repeat;}
 .section.both {background: url(/images/marker-line.png) center 70px no-repeat;}
-.section.five.left {background-position-y: 149px;}
+.section.five.left {background-position-y: 145px;}
 .section.eleven.left {background-position-y: 185px;}
 
 .one {margin-top: 7px;}
@@ -149,9 +159,9 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 
 .five .wrap div {
   width: 460px;
-  margin: 67px 0 0 174px;
+  margin: 60px 0 -1px 174px;
   padding-left: 66px;
-  background: #fff url(/images/marker-five.png) 0 65px no-repeat;
+  background: #fff url(/images/marker-five.png) 0 67px no-repeat;
   }
 .five h2 {text-align: center;}
 
@@ -181,7 +191,7 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   float: left;
   width: 310px;
   height: 158px;
-  margin: -58px 0 2px -26px;
+  margin: -58px 0 -4px -26px;
   padding: 72px 40px 0 30px;
   background: url(/images/bg-ul-application.png) top left no-repeat;
   }
@@ -201,7 +211,7 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 
 .when-where {
   position: relative;
-  margin: 0 0 58px;
+  margin: 0 0 60px;
   background:
     url(/images/bg-beige-left.png) top left repeat-y,
     url(/images/bg-beige-right.png) top right repeat-y,
@@ -301,9 +311,6 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   padding: 20px 0 0 0;
   background: #fff;
   }
-.eleven .instructor p{
-
-}
 .eleven h2 {text-align: center;}
 .eleven .border {
   float: left;
@@ -376,6 +383,27 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 
 /* Use media queries to move nav to the side on screens big enough */
 
+@media only screen and (min-width: 768px) {
+  .intro .nav {
+    clear: left;
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0 auto 40px;
+    text-align: center;
+    }
+  .intro .logo {float: none;}
+  .intro .logo img {
+    display: block;
+    margin: 43px auto 10px;
+    }
+  .intro .tagline {
+    float: none;
+    display: block;
+    text-align: center;
+    }
+  }
+
 @media only screen and (min-width: 1200px) {
   .intro .nav {
     position: fixed;
@@ -391,7 +419,6 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   .intro .logo {float: none;}
   .intro .logo img {
     display: block;
-    width: 340px;
     margin: 43px auto 10px;
     }
   .intro .tagline {
