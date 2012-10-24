@@ -49,7 +49,7 @@ p {margin: 0 0 12px;}
   padding: 0 80px 28px;
   color: #257287;
 	font-family: "ff-tisa-web-pro", "Helvetica Neue", Arial, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 160%;
   }
 .intro strong {font-weight: normal;}
@@ -133,7 +133,7 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   padding: 0 66px 45px 400px;
   background:
     url(/images/marker-two.png) 780px 0 no-repeat,
-    url(/images/illustration-two.png) 5px 25px no-repeat;
+    url(/images/illustration-two.png) 5px 76px no-repeat;
   background-color: #fff;
   }
 
@@ -312,7 +312,8 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   background: #fff;
   }
 .eleven h2 {text-align: center;}
-.eleven .border {
+
+.border {
   float: left;
   margin: -5px 30px 20px 0;
   padding: 3px;
@@ -320,11 +321,23 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   border: 1px solid #ccc;
   border-radius: 124px;
   }
-.eleven .border img {
+.border img {
   float: left;
   background: #fff;
   border-radius: 130px;
   }
+
+.quote {float: left; width: 780px; padding: 0 80px; margin-bottom: 40px;}
+.quote blockquote {margin-left: 140px;}
+.quote blockquote p {
+  color: #257287;
+	font-family: "ff-tisa-web-pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 160%;
+  }
+.quote img {width: 100px; height: 100px;}
 
 .btn {
   clear: both;
@@ -376,6 +389,8 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   border: none;
   opacity: .5;
   }
+#footer .left {float: left;}
+#footer .right {float: right;}
 #footer li a:hover {opacity: 1;}
 #footer .twitter a {background: url(/images/icon-twitter.png) no-repeat;}
 #footer .fb a {background: url(/images/icon-facebook.png) no-repeat;}
