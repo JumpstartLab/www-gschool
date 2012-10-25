@@ -43,6 +43,22 @@ a:hover {border-bottom: 1px solid #a0c6db;}
 
 p {margin: 0 0 12px;}
 
+input[type="text"] {
+  width: 250px;
+  margin-right: 6px;
+  padding: 9px;
+  border: 1px solid #cfcfcf;
+  background: #fdfdfd;
+  border-radius: 3px;
+	font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+  }
+input[type="text"]:focus {
+  background: #fff;
+  border-color: #b5d8e6;
+  outline: none;
+  }
+
 .wrap {width: 940px; margin: 0 auto; padding: 0 10px;}
 
 .intro p {
@@ -56,7 +72,7 @@ p {margin: 0 0 12px;}
 .intro img {margin: 0 80px 59px;}
 .intro .intro-video {
   width: 780px;
-  margin: 0 80px 38px;
+  margin: 0 80px 39px;
   background: url(/images/denver-images.jpg) no-repeat;
   }
 .intro .video {margin: 0 190px;}
@@ -111,7 +127,7 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 .section.left {background: url(/images/marker-line-left.png) center 17px no-repeat;}
 .section.right {background: url(/images/marker-line-right.png) center 17px no-repeat;}
 .section.both {background: url(/images/marker-line.png) center 70px no-repeat;}
-.section.five.left {background-position-y: 145px;}
+.section.five.left {background-position-y: 152px;}
 .section.eleven.left {background-position-y: 185px;}
 
 .one {margin-top: 7px;}
@@ -119,7 +135,7 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   float: left;
   width: 380px;
   margin-left: 94px;
-  padding: 0 320px 52px 66px;
+  padding: 0 320px 55px 66px;
   background:
     url(/images/marker-one.png) 0 0 no-repeat,
     url(/images/illustration-one.png) right 25px no-repeat;
@@ -159,9 +175,9 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 
 .five .wrap div {
   width: 460px;
-  margin: 60px 0 -1px 174px;
+  margin: 60px 0 0 174px;
   padding-left: 66px;
-  background: #fff url(/images/marker-five.png) 0 67px no-repeat;
+  background: #fff url(/images/marker-five.png) 0 74px no-repeat;
   }
 .five h2 {text-align: center;}
 
@@ -233,7 +249,7 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
   background: url(/images/marker-ten.png) top right no-repeat;
   }
 .when-where h2 em {
-  padding: 0 20px 0 15px;
+  padding: 0 20px 0 26px;
   color: #f7901e;
 	font-family: "ff-tisa-web-pro", "Helvetica Neue", Arial, sans-serif;
   font-size: 50px;
@@ -368,6 +384,21 @@ h2 {margin: 0 0 .5em; font-size: 20px;}
 	font-size: 20px;
   }
 .btn a:hover, .btn:hover {background: #f8ac14;}
+
+button {
+  padding: 7px 20px 8px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #b5d8e6;
+  background: #b5d8e6;
+  color: #fff;
+	font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+  }
 
 #footer {
   float: left;
