@@ -399,6 +399,7 @@ button {
 	font-size: 16px;
 	font-weight: 600;
   }
+button:hover {cursor: pointer; background: #cae2ec;}
 
 #footer {
   float: left;
